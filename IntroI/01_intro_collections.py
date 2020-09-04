@@ -54,10 +54,14 @@ s_names = []
 # Dictionaries
 
 # Create a new dictionary
-
+d = {}
 # empty
-
+d2 = {
+    "name": "Tom",
+    "age": 41
+}
 # key value pairs
+print(d2["name"])
 
 # access an element via its key
 
@@ -66,3 +70,4 @@ s_names = []
 # Lets think about Tuples?
 # this of an imutable list --> the tuple
 # good for constant values
+t = (1, 2, 3, 4)

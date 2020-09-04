@@ -1,6 +1,8 @@
 # Return the "centered" average of an array of ints, which we'll say is the mean average of the values, 
 # except ignoring the largest and smallest values in the array (list). 
 
+
+# Understand
 # what do we do if smallest or largest is duplicated
 # - we only consider 1 of smallest and 1 of largest to be valid
 
@@ -15,6 +17,33 @@
 # centered_average([1, 2, 3, 4, 100]) -> 3 >>> [1, 2, 3, 4, 100] -> 1 + 2 + 3 + 4 + 100 => 110 => 110 - max => 10 - min => 9 / 3 => 3
 # max = 100
 # min = 1
+
+
+#Plan
+# get the smallest number from list 
+# get largest number from list
+
+# sum up everything in the list
+# subtract smallest from the sum
+# subtract largest from the sum
+# floor divide the sum by the length of the list minus 2
+# return the final number
+
+
+# Execute
+def centered_avg(ints):
+    # get the smallest number from list
+    smallest = min(ints) 
+    # get largest number from list
+    largest = max(ints)
+
+    # sum up everything in the list
+    # set a sum variable to zero
+    sum = 0
+
+    # subtract largest from the sum
+    # floor divide the sum by the length of the list minus 2
+    # return the final number
 
 
 # testing
